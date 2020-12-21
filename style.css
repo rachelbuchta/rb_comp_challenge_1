@@ -15,29 +15,33 @@ nav {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 10%;
+  height: 15%;
   background: #393d3f;
 }
 
-ul {
-  display: flex;
-  list-style: none;
-  flex-wrap: nowrap;
-  align-items: flex-end;
-  margin-bottom: 2%;
-  width: 66%;
+.nav-icons {
+  height: 1em;
+  width: 1em;
+  padding-right: 5%;
 }
 
-li {
-  display: flex;
-  margin-left: 4%;
-  margin-right: 4%;
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 49%;
+  list-style: none;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-left: -2%;
+  margin-bottom: 2%;
+
 }
+
 
 main {
   display: flex;
   flex-direction: column;
-  height: 90%;
+  height: 85%;
   background: #dee2e6;
 
 }
@@ -66,17 +70,34 @@ main {
   height: 100%;
   width: 95%;
   grid-template-columns: repeat(4, 25%);
-  grid-template-rows: repeat(2, 50%)
+  grid-template-rows: repeat(2, 50%);
+  grid-gap: .7em;
 }
 
 div {
   background-color: #fdfdff;
-  margin: 1%;
+  
 }
 
-img {
+.card-image {
   height: 35%;
   width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.view-count {
+  z-index: 2;
+
+}
+
+.share-image {
+  height: 2em;
+  width: 2em;
+  position: fixed;
+  z-index: 2;
+  margin-top: 1%;
+  margin-left: 1%;
 }
 
 .information {
