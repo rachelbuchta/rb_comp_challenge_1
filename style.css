@@ -6,8 +6,6 @@
 body {
   display: flex;
   flex-direction: column;
-  /* height:auto;
-  width: 100%; */
 }
 
 nav {
@@ -40,15 +38,13 @@ ul {
   list-style: none;
   align-items: flex-end;
   margin-bottom: 2%;
-
 }
 
 .admin-logo {
   display: grid;
   grid-template-rows: 1fr 2fr;
   align-items: center;
-  justify-items: center;
-  margin-right: -20%;
+  justify-items: end;
 }
 
 .admin-wrapper {
@@ -63,44 +59,36 @@ ul {
 .logo {
   background: #393d3f;
   height: 5em;
-  width: 10em;
-  margin-bottom: -3%;
+  width: 15em;
+  align-self: center;
 }
 
 main {
   display: flex;
   flex-direction: column;
-  /* display: grid;
-  grid-template-rows: 1fr 10fr; */
-  /* grid-gap: 1em; */
-  /* height: 100%;
-  width: 100%; */
   background: #dee2e6;
+  height: 85%;
+  width: 100%;
 }
 
 .header {
-  /* display: flex;
-  flex-direction: row; */
-  /* height: 10%; */
   align-items: center;
-  /* margin-left: 2%; */
   padding: 1%;
   font-size: 1.5em;
-
 }
 
 .card-grid-display {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* height: 70%;  */
- 
+  /* height: 100%; */
 }
 
 .grid-container {
   display: grid;
   justify-content: center;
   width: 95%;
+  /* height: 100%; */
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: repeat(2, 50%);
   grid-gap: .7em;
@@ -109,31 +97,29 @@ main {
 .card {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 2fr 3fr;
+  grid-template-rows: 1fr 2fr;
   background-color: #fdfdff;
-  
 }
-
-/* div {
-  background-color: #fdfdff;
-} */
 
 .image {
  height: 35%;
-  width: 100%;
+ width: 100%;
+ /* opacity: 60%; */
 }
 
 
 .image-wrapper {
   display: grid;
     grid-template-columns: 1fr;
-    /* grid-template-rows: 1fr; */
+    grid-template-rows: 1fr;
     grid-column: 1;
     grid-row: 1;
+    justify-content: center;
+    align-content: center;
   /* display: flex; */
   /* flex-direction: column;
   justify-content: space-between; */
-  padding: 1%;
+  padding: 2%;
   /* height: 7%;
   width: 23%; */
   z-index: 2;
@@ -156,21 +142,30 @@ main {
 
 .view-wrapper {
   display: flex;
+  grid-column: -1;
   flex-direction: column;
+  justify-self: center;
   justify-self: flex-end;
   align-self: flex-start;
-  text-align: center;
-
+  
 }
 
 .view-count {
   grid-column: -1;
-  /*grid-row: 1; */
   z-index: 2;
    justify-self: end;
-   color: white;
+   color: #38B5E9;
+   
   align-self: start;
 
+}
+
+.views {
+  font-size: .7em;
+}
+.count {
+  align-self: center;
+  font-size: 2em;
 }
 
 .information {
