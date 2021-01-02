@@ -27,6 +27,10 @@ nav {
   width: 1em;
 }
 
+.admin {
+  color: #00a6fb;
+}
+
 .select {
   padding-right: 5%;;
 }
@@ -114,7 +118,6 @@ nav {
 .image {
  height: 40%;
  width: 100%; 
- /* opacity: 60%; */
  } 
 
 
@@ -246,17 +249,18 @@ main {
   justify-content: center;
 }
 
-ul {
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+ ul {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   grid-template-areas:
-    "li" 
-    "li" 
-    "li";
-}
+    "li li li";
+  font-size: .9em;
+  width: 100%;
+  margin-left: 5%;
+} 
 
 li {
-  width: 50%;
+  width: 100%;
   padding: 1%;
 }
 
@@ -275,7 +279,6 @@ li {
  .card-container {
 grid-template-columns: 1fr;
 grid-template-rows: 1fr;
-grid-gap: .7em;
 width: 80%;
 }  
 }
